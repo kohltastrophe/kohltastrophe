@@ -1,0 +1,7 @@
+name = "kohltastrophe-sponsors-webhook"
+main = "scripts/kofi-webhook-worker.js"
+compatibility_date = "2026-11-01"
+workers_dev = true
+
+[vars]
+GITHUB_REPO = "kohltastrophe/kohltastrophe"

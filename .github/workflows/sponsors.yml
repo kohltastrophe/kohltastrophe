@@ -1,0 +1,50 @@
+# Generates `sponsors.svg`, `sponsor-github.svg`, `sponsor-kofi.svg`, and `sponsors.json`
+# onto the orphan `badges` branch without creating bot commits on `main`.
+#
+# Required repository secret:
+#   - SPONSORS_TOKEN: Classic GitHub PAT with `read:user` scope (reads public GitHub Sponsors tiers)
+# See SPONSORS.md for full setup instructions.
+
+name: Sponsors
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  repository_dispatch:
+    types: [sponsors-updated, kofi-webhook]
+  push:
+    branches: [main]
+    paths:
+      - "scripts/sponsors.py"
+      - ".github/FUNDING.yml"
+      - ".github/sponsors.json"
+      - ".github/workflows/sponsors.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sponsors
+  cancel-in-progress: false
+
+jobs:
+  sponsors:
+    name: Generate sponsors.svg
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.x"
+
+      - name: Generate and publish sponsors SVGs
+        env:
+          SPONSORS_TOKEN: ${{ secrets.SPONSORS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          EXTRA_SPONSORS_JSON: ${{ vars.EXTRA_SPONSORS_JSON }}
+          KOFI_WEBHOOK_PAYLOAD: ${{ toJSON(github.event.client_payload.kofi) }}
+        run: |
+          python3 -m unittest discover -s tests
+          python3 scripts/sponsors.py --output /tmp/sponsors.svg --branch badges --push
