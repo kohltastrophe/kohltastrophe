@@ -1,0 +1,39 @@
+# Generates `sponsors.svg`, `sponsor-github.svg`, `sponsor-kofi.svg`, and `sponsors.json`
+# onto the orphan `badges` branch without creating bot commits on `main`.
+
+name: Sponsors
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Preview generated SVGs without updating badges"
+        type: boolean
+        default: false
+  repository_dispatch:
+    types: [sponsors-updated, kofi-webhook]
+  push:
+    branches: [main]
+    paths:
+      - ".github/FUNDING.yml"
+      - ".github/workflows/sponsors.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sponsors
+  cancel-in-progress: false
+
+jobs:
+  sponsors:
+    name: Generate sponsors.svg
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: kohltastrophe/sponsors@v1
+        with:
+          token: ${{ secrets.SPONSORS_TOKEN || github.token }}
