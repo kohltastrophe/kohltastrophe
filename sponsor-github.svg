@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 60" width="340" height="60" role="img" aria-label="Sponsor on GitHub Sponsors">
+  <style>
+    .font {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .tier-heading {
+      fill: #656d76;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .sponsor-name {
+      fill: #1f2328;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .sponsor-login {
+      fill: #656d76;
+      font-size: 11px;
+      font-weight: 400;
+    }
+    .avatar-ring {
+      fill: none;
+      stroke: #d0d7de;
+      stroke-width: 1.25;
+    }
+    .avatar-ring-featured {
+      fill: none;
+      stroke: #bf3989;
+      stroke-width: 1.5;
+      stroke-opacity: 0.55;
+    }
+    .avatar-fallback {
+      fill: #f6f8fa;
+    }
+    .avatar-initial {
+      fill: #57606a;
+      font-weight: 600;
+    }
+    .cta-card {
+      fill: #f6f8fa;
+      stroke: #d0d7de;
+      stroke-width: 1;
+    }
+    .cta-title {
+      fill: #1f2328;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .cta-sub {
+      fill: #656d76;
+      font-size: 11.5px;
+      font-weight: 400;
+    }
+    .cta-slot-github {
+      fill: #bf3989;
+      fill-opacity: 0.1;
+      stroke: #bf3989;
+      stroke-width: 1.25;
+      stroke-dasharray: 3 3;
+    }
+    .cta-icon-github {
+      fill: #bf3989;
+    }
+    .cta-pill-github {
+      fill: #bf3989;
+      fill-opacity: 0.1;
+      stroke: #bf3989;
+      stroke-width: 1;
+      stroke-opacity: 0.35;
+    }
+    .cta-pill-text-github {
+      fill: #bf3989;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .cta-slot-kofi {
+      fill: #e04f4c;
+      fill-opacity: 0.1;
+      stroke: #e04f4c;
+      stroke-width: 1.25;
+      stroke-dasharray: 3 3;
+    }
+    .cta-icon-kofi {
+      fill: #e04f4c;
+    }
+    .cta-pill-kofi {
+      fill: #e04f4c;
+      fill-opacity: 0.1;
+      stroke: #e04f4c;
+      stroke-width: 1;
+      stroke-opacity: 0.35;
+    }
+    .cta-pill-text-kofi {
+      fill: #e04f4c;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    @media (prefers-color-scheme: dark) {
+      .tier-heading { fill: #8b949e; }
+      .sponsor-name { fill: #e6edf3; }
+      .sponsor-login { fill: #8b949e; }
+      .avatar-ring { stroke: #30363d; }
+      .avatar-ring-featured { stroke: #db61a2; stroke-opacity: 0.65; }
+      .avatar-fallback { fill: #161b22; }
+      .avatar-initial { fill: #8b949e; }
+      .cta-card { fill: #161b22; stroke: #30363d; }
+      .cta-title { fill: #e6edf3; }
+      .cta-sub { fill: #8b949e; }
+      .cta-slot-github { fill: #db61a2; fill-opacity: 0.14; stroke: #db61a2; }
+      .cta-icon-github { fill: #db61a2; }
+      .cta-pill-github { fill: #db61a2; fill-opacity: 0.14; stroke: #db61a2; stroke-opacity: 0.45; }
+      .cta-pill-text-github { fill: #db61a2; }
+      .cta-slot-kofi { fill: #ff7875; fill-opacity: 0.14; stroke: #ff7875; }
+      .cta-icon-kofi { fill: #ff7875; }
+      .cta-pill-kofi { fill: #ff7875; fill-opacity: 0.14; stroke: #ff7875; stroke-opacity: 0.45; }
+      .cta-pill-text-kofi { fill: #ff7875; }
+    }
+  </style>
+  <rect class="cta-card" x="0.5" y="0.5" width="339" height="59" rx="12" />
+  <circle class="cta-slot-github" cx="30" cy="30" r="16" pathLength="96" />
+  <path class="cta-icon-github" transform="translate(23.2, 23.5) scale(0.85)" d="M7.655 14.916v-.001h-.002l-.006-.003-.018-.01a22.066 22.066 0 0 1-3.744-2.584C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.044 5.231-3.886 6.818a22.094 22.094 0 0 1-3.433 2.414 7.152 7.152 0 0 1-.31.17l-.018.01-.008.004a.75.75 0 0 1-.69 0Z" />
+  <text class="font cta-title" x="58" y="25.5">Become the first sponsor</text>
+  <text class="font cta-sub" x="58" y="42">Get featured across every repo</text>
+  <rect class="cta-pill-github" x="256" y="17" width="72" height="26" rx="13" />
+  <text class="font cta-pill-text-github" x="292.0" y="34.2" text-anchor="middle">Sponsor</text>
+</svg>
