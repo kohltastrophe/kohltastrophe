@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 56" width="304" height="56" role="img" aria-label="Support on Ko-fi">
+  <style>
+    .font {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .tier-heading {
+      fill: #656d76;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .sponsor-name {
+      fill: #1f2328;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .sponsor-login {
+      fill: #656d76;
+      font-size: 11px;
+      font-weight: 400;
+    }
+    .avatar-ring {
+      fill: none;
+      stroke: #d0d7de;
+      stroke-width: 1.25;
+    }
+    .avatar-ring-featured {
+      fill: none;
+      stroke: #bf3989;
+      stroke-width: 1.5;
+      stroke-opacity: 0.55;
+    }
+    .avatar-fallback {
+      fill: #f6f8fa;
+    }
+    .avatar-initial {
+      fill: #57606a;
+      font-weight: 600;
+    }
+    .cta-card {
+      fill: #f6f8fa;
+      stroke: #d0d7de;
+      stroke-width: 1;
+    }
+    .cta-title {
+      fill: #1f2328;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .cta-sub {
+      fill: #656d76;
+      font-size: 11.5px;
+      font-weight: 400;
+    }
+    .cta-slot-github {
+      fill: #bf3989;
+      fill-opacity: 0.1;
+      stroke: #bf3989;
+      stroke-width: 1.25;
+      stroke-dasharray: 3 3;
+    }
+    .cta-icon-github {
+      fill: #bf3989;
+    }
+    .cta-pill-github {
+      fill: #bf3989;
+      fill-opacity: 0.1;
+      stroke: #bf3989;
+      stroke-width: 1;
+      stroke-opacity: 0.35;
+    }
+    .cta-pill-text-github {
+      fill: #bf3989;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .cta-slot-kofi {
+      fill: #e04f4c;
+      fill-opacity: 0.1;
+      stroke: #e04f4c;
+      stroke-width: 1.25;
+      stroke-dasharray: 3 3;
+    }
+    .cta-icon-kofi {
+      fill: #e04f4c;
+    }
+    .cta-pill-kofi {
+      fill: #e04f4c;
+      fill-opacity: 0.1;
+      stroke: #e04f4c;
+      stroke-width: 1;
+      stroke-opacity: 0.35;
+    }
+    .cta-pill-text-kofi {
+      fill: #e04f4c;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    @media (prefers-color-scheme: dark) {
+      .tier-heading { fill: #8b949e; }
+      .sponsor-name { fill: #e6edf3; }
+      .sponsor-login { fill: #8b949e; }
+      .avatar-ring { stroke: #30363d; }
+      .avatar-ring-featured { stroke: #db61a2; stroke-opacity: 0.65; }
+      .avatar-fallback { fill: #161b22; }
+      .avatar-initial { fill: #8b949e; }
+      .cta-card { fill: #161b22; stroke: #30363d; }
+      .cta-title { fill: #e6edf3; }
+      .cta-sub { fill: #8b949e; }
+      .cta-slot-github { fill: #db61a2; fill-opacity: 0.14; stroke: #db61a2; }
+      .cta-icon-github { fill: #db61a2; }
+      .cta-pill-github { fill: #db61a2; fill-opacity: 0.14; stroke: #db61a2; stroke-opacity: 0.45; }
+      .cta-pill-text-github { fill: #db61a2; }
+      .cta-slot-kofi { fill: #ff7875; fill-opacity: 0.14; stroke: #ff7875; }
+      .cta-icon-kofi { fill: #ff7875; }
+      .cta-pill-kofi { fill: #ff7875; fill-opacity: 0.14; stroke: #ff7875; stroke-opacity: 0.45; }
+      .cta-pill-text-kofi { fill: #ff7875; }
+    }
+  </style>
+  <rect class="cta-card" x="0.5" y="0.5" width="303" height="55" rx="12" />
+  <circle class="cta-slot-kofi" cx="28" cy="28" r="16" pathLength="96" />
+  <path class="cta-icon-kofi" fill-rule="evenodd" transform="translate(21.25, 19.875)" d="M1 3.5A1 1 0 0 1 2 2.5h9.5a1 1 0 0 1 1 1V4.5h1.25a2.75 2.75 0 0 1 0 5.5H12.4A4.5 4.5 0 0 1 8 13.75H5.5A4.5 4.5 0 0 1 1 9.25V3.5ZM12.5 6v2.5h1.25a1.25 1.25 0 0 0 0-2.5H12.5ZM6.75 10.9c.38-.24 2.85-1.85 2.85-3.7 0-1.05-.8-1.82-1.75-1.82-.48 0-.86.24-1.1.6-.24-.36-.62-.6-1.1-.6-.95 0-1.75.77-1.75 1.82 0 1.85 2.47 3.46 2.85 3.7Z" />
+  <text class="font cta-title" x="56" y="24">Ko-fi</text>
+  <text class="font cta-sub" x="56" y="40">0% fee tips &amp; memberships</text>
+  <rect class="cta-pill-kofi" x="222" y="15" width="70" height="26" rx="13" />
+  <text class="font cta-pill-text-kofi" x="257.0" y="32.2" text-anchor="middle">Support</text>
+</svg>
